@@ -1,0 +1,11 @@
+{
+  "plugins": {
+    "oh-my-claudecode": [
+      {
+        "installPath": "/home/integrate/oh-my-claudecode",
+        "version": "4.13.0",
+        "source": "local"
+      }
+    ]
+  }
+}

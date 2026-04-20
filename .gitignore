@@ -1,0 +1,13 @@
+# secrets
+claude/.credentials.json
+claude/history.jsonl
+claude/mcp-needs-auth-cache.json
+claude/paste-cache/
+claude/shell-snapshots/
+claude/sessions/
+claude/session-env/
+claude/telemetry/
+claude/file-history/
+claude/cache/
+claude/backups/
+claude/projects/

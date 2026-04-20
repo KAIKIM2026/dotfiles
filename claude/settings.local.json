@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone *)",
+      "Bash(npm list *)",
+      "Bash(xargs ls *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('scripts', {}\\), indent=2\\)\\)\")",
+      "Bash(npm install *)",
+      "Bash(omc --version)",
+      "Bash(CLAUDE_PLUGIN_ROOT=/home/integrate/oh-my-claudecode node *)",
+      "Bash(CLAUDE_PLUGIN_ROOT=/home/integrate/oh-my-claudecode bash *)",
+      "Bash(omc setup *)",
+      "Bash(python3 -m json.tool)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:codecreature.tistory.com)",
+      "Bash(gh api *)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(git --version)",
+      "Bash(git config *)",
+      "Bash(curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg)",
+      "Bash(sudo dd *)",
+      "Bash(sudo chmod *)",
+      "Bash(dpkg --print-architecture)",
+      "Bash(echo \"deb [arch=$\\(dpkg --print-architecture\\) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main\")",
+      "Bash(sudo tee *)",
+      "Bash(sudo apt *)",
+      "Bash(mkdir -p ~/dotfiles/claude)",
+      "Bash(cp ~/.claude/settings.json ~/dotfiles/claude/)",
+      "Bash(cp ~/.claude/settings.local.json ~/dotfiles/claude/)",
+      "Bash(cp ~/.claude/CLAUDE.md ~/dotfiles/claude/)",
+      "Bash(cp ~/.claude/.omc-config.json ~/dotfiles/claude/)"
+    ]
+  }
+}
