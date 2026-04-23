@@ -3,7 +3,9 @@ set -e
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CLAUDE_DIR="$HOME/.claude"
+CODEX_DIR="$HOME/.codex"
 DOTS="$DOTFILES_DIR/claude"
+CODEX_DOTS="$DOTFILES_DIR/codex"
 
 echo "==> Claude Code / OMC / Codex dotfiles installer"
 
@@ -39,6 +41,15 @@ for d in hooks skills hud plugins; do
 done
 
 echo "[✓] Symlinks created → $CLAUDE_DIR"
+
+# 3.5. Symlink Codex config files
+echo "==> Symlinking Codex config files..."
+mkdir -p "$CODEX_DIR"
+
+rm -f "$CODEX_DIR/config.toml"
+ln -sf "$CODEX_DOTS/config.toml" "$CODEX_DIR/config.toml"
+
+echo "[✓] Symlink created → $CODEX_DIR/config.toml"
 
 # 4. omc setup
 echo "==> Running omc setup..."
