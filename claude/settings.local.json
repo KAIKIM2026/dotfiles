@@ -29,7 +29,8 @@
       "Bash(cp ~/.claude/settings.json ~/dotfiles/claude/)",
       "Bash(cp ~/.claude/settings.local.json ~/dotfiles/claude/)",
       "Bash(cp ~/.claude/CLAUDE.md ~/dotfiles/claude/)",
-      "Bash(cp ~/.claude/.omc-config.json ~/dotfiles/claude/)"
+      "Bash(cp ~/.claude/.omc-config.json ~/dotfiles/claude/)",
+      "Skill(update-config)"
     ]
   }
 }

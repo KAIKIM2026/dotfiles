@@ -1,7 +1,6 @@
 {
-  "statusLine": {
-    "type": "command",
-    "command": "\"/home/integrate/.nvm/versions/node/v20.20.2/bin/node\" \"/home/integrate/.claude/hud/omc-hud.mjs\""
+  "permissions": {
+    "defaultMode": "bypassPermissions"
   },
   "hooks": {
     "UserPromptSubmit": [
@@ -72,5 +71,10 @@
         ]
       }
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "\"/home/integrate/.nvm/versions/node/v20.20.2/bin/node\" \"/home/integrate/.claude/hud/omc-hud.mjs\""
+  },
+  "skipDangerousModePermissionPrompt": true
 }
