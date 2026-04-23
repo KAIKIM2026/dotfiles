@@ -6,6 +6,7 @@ CLAUDE_DIR="$HOME/.claude"
 CODEX_DIR="$HOME/.codex"
 DOTS="$DOTFILES_DIR/claude"
 CODEX_DOTS="$DOTFILES_DIR/codex"
+SHELL_DOTS="$DOTFILES_DIR/shell"
 
 echo "==> Claude Code / OMC / Codex dotfiles installer"
 
@@ -50,6 +51,14 @@ rm -f "$CODEX_DIR/config.toml"
 ln -sf "$CODEX_DOTS/config.toml" "$CODEX_DIR/config.toml"
 
 echo "[✓] Symlink created → $CODEX_DIR/config.toml"
+
+# 3.6. Symlink shell helper files
+echo "==> Symlinking shell helper files..."
+
+rm -f "$HOME/.bash_aliases"
+ln -sf "$SHELL_DOTS/.bash_aliases" "$HOME/.bash_aliases"
+
+echo "[✓] Symlink created → $HOME/.bash_aliases"
 
 # 4. omc setup
 echo "==> Running omc setup..."
